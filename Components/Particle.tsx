@@ -9,7 +9,7 @@ const Particle = () => {
   }, []);
 
   const options = {
-    background: { color: { value: "#0d47a1" } },
+    background: { color: { value: "#0d47a1" } }, 
     fpsLimit: 120,
     interactivity: {
       events: {
