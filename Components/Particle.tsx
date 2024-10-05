@@ -9,12 +9,12 @@ const Particle = () => {
   }, []);
 
   const options = {
-    background: { color: { value: "#0d47a1" } }, 
+    background: { color: { value: "#0f172a" } }, 
     fpsLimit: 120,
     interactivity: {
       events: {
-        onClick: { enable: true, mode: "push" },
-        onHover: { enable: true, mode: "repulse" },
+        onClick: { enable: false, mode: "push" },
+        onHover: { enable: false, mode: "repulse" },
         resize: true,
       },
       modes: {
@@ -28,11 +28,11 @@ const Particle = () => {
         color: "#ffffff",
         distance: 150,
         enable: true,
-        opacity: 0.5,
+        opacity: 0.02,
         width: 1,
       },
       move: {
-        enable: true,
+        enable: false,
         speed: 6,
         outModes: "bounce" as const, // Casting as const to satisfy TypeScript
       },
