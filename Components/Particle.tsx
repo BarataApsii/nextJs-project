@@ -6,7 +6,7 @@ import type { Engine } from "tsparticles-engine";
 const Particle = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
-  }, []);
+  }, []); 
 
   const options = {
     background: { color: { value: "#0f172a" } }, 
